@@ -9,6 +9,16 @@
 	<!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <style>
+
+	body {
+		min-width:100vw ;
+		min-height : 100vh ;
+		background-size : cover ;
+		background-position : center center ;
+		padding-top : 50px;
+	}
+	</style>
 </head>
 
 <body>
@@ -41,12 +51,16 @@
           			</div>
         		</div>
       		</div>
+      		<div class="col-md-6 col-md-offset-3">
+				<a id="backGroundBtn" class="btn btn-default" >更新背景</a>
+			</div>
 		</div>
 	</div>
   <!-- <script src="jquery-2.2.3.min.js"></script> -->
   <!-- <script src="js/bootstrap.min.js"></script> -->
 
 	<!-- <script src="js/answer.js"></script> -->
+	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/js.js"></script>
 	<script>function r (){localStorage.removeItem("todoDataArray");return ("Cleared localStorage.") } ;</script>
 </body>
