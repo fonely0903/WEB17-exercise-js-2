@@ -26,10 +26,10 @@ function createTodoElement(todoTitle){
 	todoEle.textContent = todoTitle;
 	
 	todoEle.addEventListener("click",function(e){
-		if(e.currentTarget.className.indexOf("list-group-item-success")>-1){
-			todoEle.className = "list-group-item";	
+		if(e.currentTarget.className === "list-group-item"){
+			todoEle.className = "list-group-item list-group-item-success";	
 		}else{
-			todoEle.className += " list-group-item-success"
+			todoEle.className = "list-group-item"
 		}
 	});
 	return todoEle;
@@ -43,8 +43,8 @@ allDoneBtnEle.addEventListener("click",function(e){
 	console.log(listLength);
 
 	for(var i=0;i<listLength;i++){
-		if(todoEles[i].className.indexOf("list-group-item-success") == -1){
-			todoEles[i].className += " list-group-item-success";
+		if(todoEles[i].className === "list-group-item"){
+			todoEles[i].className = "list-group-item list-group-item-success";
 		}
 	}
 })
